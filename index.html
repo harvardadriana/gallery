@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en'">
+<head>
+            <meta charset="utf-8">
+            <link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+            <link href="css/dgmdgallery.css" rel="stylesheet">
+
+            <title> DGMD E-20 Gallery </title>
+
+</head>
+
+<body background="img/gallery.jpg">
+
+<div class="container">
+
+            <h1>Welcome to DGMD E-20 Gallery</h1>
+
+            <div id="canvasFormat">
+                        <canvas width="300" height="300" id="canvas1"></canvas>
+                        <canvas width="300" height="300" id="canvas2"></canvas>
+                        <canvas width="300" height="300" id="canvas3"></canvas>
+            </div>
+
+            <div id="options">
+                        <fieldset>
+                                    <legend>Paint your own canvas:</legend>
+
+                                    <div class="instructions">
+
+                                                <!-- choose image background -->
+                                                <select id="backgrounds">
+                                                            <option checked>Please select your favorite background:</option>
+                                                            <option value="white">White</option>
+                                                            <option value="orange">Orange</option>
+                                                            <option value="purple">Purple</option>
+                                                </select>
+
+                                                <!-- Add circles  -->
+                                                <div class="circles">
+                                                            <br>
+                                                            <label for="xLocation">Give coordinates if you would like to add:</label>
+                                                            <br>
+                                                            <input type="number" id="xLocation" placeholder="Give coordinates for x:">
+                                                            <input type="number" id="yLocation" placeholder="Give coordinates for y:">
+                                                            <input type="number" id="circleRadius" placeholder="Radius:">
+                                                            <button id="addCircles">Add circles</button>
+                                                </div>
+
+                                                <!-- Add rectangles -->
+                                                <div class="rectangles">
+                                                            <br>
+                                                            <input type="number" id="xLocationRec" placeholder="Give coordinates for x:">
+                                                            <input type="number" id="yLocationRec" placeholder="Give coordinates for y:">
+                                                            <input type="number" id="widthRec" placeholder="Width:">
+                                                            <input type="number" id="heightRec" placeholder="Height:">
+                                                            <button id="addRectangles">Add rectangles</button>
+                                                </div>
+
+                                                <!-- Add stars -->
+                                                <div class="stars">
+                                                            <br>
+                                                            <input type="number" id="xStars" placeholder="Give coordinates for x:">
+                                                            <input type="number" id="yStars" placeholder="Give coordinates for y:">
+                                                            <button id="addStars">Add stars</button>
+                                                </div>
+
+                                                <br>
+                                                <input type="text" id="painter" placeholder="Please sign your name">
+                                                <br><br>
+                                                <button id="finish">Finish!</button>
+                                                <button id="clear">Or clear canvas and start again!</button>
+                                    </div>
+                        </fieldset>
+            </div> 
+</div>
+
+<!-- javascript -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
+
+<!-- jCanvas -->
+<script src="js/jcanvas.min.js"></script>
+<script src="js/dgmdgallery.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+body {
+background-repeat: no-repeat   center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.container {
+min-width: 1200px;
+max-width: 1200px;
+}
+
+h1 {
+color: blue;
+text-align: center;
+margin-left: 95px;
+padding: 15px;
+font-family: 'Courgette', cursive;
+font-size: 35px;
+}
+
+#canvasFormat {
+margin-top: 160px;
+padding-left: 0;
+padding-right: 0;
+margin-left: 50px;
+margin-right: 0 ;
+text-align: center;
+display: block;
+}
+
+canvas {
+border: 15px groove black;
+}
+
+#options {
+text-align: center;
+margin-top: 190px;
+width: 800px;
+margin-left: 300px;
+margin-bottom: 40px;
+}
+
+button {
+background-color: #6666FF;
+border: black;
+color: #fff;
+}
+
+legend , label{
+color: blue;
+}
