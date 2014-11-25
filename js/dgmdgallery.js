@@ -1,6 +1,4 @@
 $(document).ready(function(){
-
-    //    	alert('You can paint your own painting!');
 	
 	// add picture of canvas 1
 	$('#canvas1').drawImage({
@@ -30,7 +28,7 @@ $(document).ready(function(){
 				chooseimg = "img/backgrounds/purple.jpg";
 				break;
 			default: 
-				chooseimg = "";
+				chooseimg = "img/backgrounds/purple.jpg";
 		} 
 			
 		$('#canvas2').drawImage({
@@ -119,15 +117,9 @@ $(document).ready(function(){
 		});
 	});
 
-
-
-
-
 	// clear canvas 2
 	$('#clear').click(function(){
 		$('#canvas2').clearCanvas();
 	});
-
-
 
 });
